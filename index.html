@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Asian American Artists Relational Mapping</title>
+    <meta charset="utf-8">
+    <!-- CSS-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div><button id="language" onclick="switch_lang()">English</button></div>
+    <iframe src="https://graphcommons.com/graphs/36bdf87c-03c2-4fa0-aad6-e9b0f499e3fa/embed" frameborder="0"
+        style="overflow:hidden;width:1px;min-width:100%;height: 100vh;min-height:400px;" width="100%" height="100%"
+        id="english" allowfullscreen></iframe>
+    <iframe src="https://graphcommons.com/graphs/36bdf87c-03c2-4fa0-aad6-e9b0f499e3fa/embed" frameborder="0"
+        style="overflow:hidden;width:1px;min-width:100%;height: 100vh;min-height:400px;" width="100%" height="100%"
+        id="japanese" allowfullscreen></iframe>
+    <script>
+        let languageButton = document.getElementById("language");
+        let eng_map = document.getElementById("english");
+        let j_map = document.getElementById("japanese");
+
+        function switch_lang() {
+
+            if (languageButton.innerHTML === 'Japanese') {
+                console.log("here");
+                j_map.style.display = 'block';
+                eng_map.style.display = 'none';
+                languageButton.innerHTML = 'English';
+            } else if (languageButton.innerHTML === "English") {
+                eng_map.style.display = 'block';
+                j_map.style.display = 'none';
+                languageButton.innerHTML = 'Japanese';
+            }
+        }
+    </script>
+</body>
+
+
+
+</html>

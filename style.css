@@ -1,0 +1,17 @@
+#english {
+    display: none;
+}
+
+#japanese {
+    display: block;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+button {
+    align-items: center;
+}
